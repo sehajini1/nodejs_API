@@ -11,7 +11,7 @@ const getProducts = async (req, res) => {
   } catch (error) {
     res.status(500).json({message: error.message});
   }
-};
+}
 
 //get a single product
 const getProductById = asyncHandler(async(req, res) => { //without asyncHandler, error doesn't work properly 
